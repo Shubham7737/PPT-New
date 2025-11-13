@@ -76,7 +76,7 @@ const ServiceCard = ({ title, features, buttonText, buttonHref, index }) => {
 
   const isHighlighted = index >= 2;
 
-  const cardClasses = `border border-[#0f2b46] shadow-[0_0_15px_rgba(0,212,255,0.08)] bg-gradient-to-r from-[#191e2b] to-[#00c6e6]`;
+  const cardClasses = `border border-[#0f2b46] shadow-[0_0_15px_rgba(0,212,255,0.08)] bg-gradient-to-r from-fuchsia-500 to-cyan-500`;
 
   const hoverClasses =
     "hover:shadow-[0_0_25px_rgba(0,212,255,0.15)] hover:border-[#00d4ff]";
@@ -89,8 +89,8 @@ const ServiceCard = ({ title, features, buttonText, buttonHref, index }) => {
       } ${cardClasses} ${hoverClasses}`}
       style={{ perspective: "800px" }}
     >
-      <h3 className="text-xl font-bold mb-4 text-[#e6f3ff]">{title}</h3>
-      <ul className="text-[#9fb6c9] space-y-3 mb-6 min-h-[140px]">
+      <h3 className="text-xl font-bold mb-4 text-black">{title}</h3>
+      <ul className="text-white space-y-3 mb-6 min-h-[140px]">
         {features.map((feature, i) => (
           <li key={i} className="flex items-start">
             <span className="text-[#00d4ff] mr-2 text-xl leading-none">•</span>
@@ -116,7 +116,7 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative z-10 py-12 md:py-16 px-4 md:px-16 overflow-hidden bg-[#0b1324] text-white"
+      className="relative z-10 py-12 md:py-16 px-4 md:px-16 overflow-hidden bg-[#0b1324] text-black"
     >
       {/* Background Dots */}
       <div className="absolute inset-0 opacity-10">

@@ -53,7 +53,7 @@ const BenefitCard = ({ item }) => {
       ref={cardRef}
       className={`
         p-6 md:p-8 rounded-xl text-center flex flex-col items-center justify-start
-        bg-gradient-to-r from-fuchsia-500 to-cyan-500  border-t-4 border-l-2 border-gray-700
+        bg-gradient-to-r from-[#191e2b] to-[#00c6e6]  border-t-4 border-l-2 border-gray-700
         shadow-2xl relative transform transition-all duration-700
         ${visible ? 'opacity-100 scale-100 translate-y-0 shadow-cyan-500/50' : 'opacity-0 scale-90 translate-y-10'}
         hover:-translate-y-2 hover:scale-[1.02] hover:shadow-cyan-500/60
