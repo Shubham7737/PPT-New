@@ -44,7 +44,7 @@ export default function Marquee() {
 
     let pos = 0;
     let isPaused = false;
-    const speed = 0.5;
+    const speed = 2;
 
     // Hover directly on track
     track.addEventListener("mouseenter", () => (isPaused = true));
