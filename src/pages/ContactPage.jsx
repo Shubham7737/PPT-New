@@ -50,7 +50,7 @@ export default function Contact() {
               <option value="" disabled>
                 Service Interested In
               </option>
-              <option>E‑commerce Management</option>
+              <option>E-commerce Management</option>
               <option>Website Development</option>
               <option>App Development</option>
               <option>Digital Marketing</option>

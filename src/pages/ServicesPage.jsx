@@ -5,48 +5,50 @@ const servicesData = [
   {
     title: "E-commerce Management",
     features: [
-      "Seller account setup & compliance",
-      "Catalog, SEO, A+ content",
-      "Ads, promotions & analytics",
-      "Inventory & performance ops",
+      "Seller account setup & compliance (Amazon, Flipkart, Shopify, etc.)",
+      "Product catalog creation & SEO optimization",
+      "A+ content creation, ads & promotions",
+      "Inventory management & performance analytics",
     ],
     buttonText: "Get a plan",
     buttonHref: "#contact",
   },
   {
-    title: "Website Development",
-    features: [
-      "Fast, responsive, SEO-ready",
-      "Headless & CMS integrations",
-      "Landing pages that convert",
-      "Analytics & automation",
-    ],
-    buttonText: "Start a project",
-    buttonHref: "#project",
-  },
+  title: "Website Development",
+  features: [
+    "Custom responsive websites for all devices",
+    "SEO-ready & fast-loading pages",
+    "SPA (Single Page Application) & CMS integrations (WordPress, Strapi)",
+    "Landing pages & analytics to convert visitors",
+  ],
+  buttonText: "Start a project",
+  buttonHref: "#contact",
+},
   {
     title: "App Development",
     features: [
-      "iOS/Android with one codebase",
-      "Prototyping to production",
+      "iOS & Android apps with single codebase (React Native / Flutter)",
+      "Prototyping to production deployment",
       "Clean UI/UX design system",
-      "Firebase, payments, auth",
+      "Firebase integration, payment gateways & authentication",
     ],
     buttonText: "Build an app",
-    buttonHref: "#app",
+    buttonHref: "#contact",
   },
   {
     title: "Digital Marketing",
     features: [
-      "SEO + Content + PR",
-      "Meta/Google Ads & funnels",
-      "Marketing automation",
-      "Reporting & insights",
+      "SEO, Content Marketing & PR campaigns",
+      "Meta Ads, Google Ads & sales funnels",
+      "Email & social media marketing automation",
+      "Performance tracking & reporting dashboards",
     ],
     buttonText: "Boost growth",
-    buttonHref: "#growth",
+    buttonHref: "#contact",
   },
 ];
+
+
 
 // Individual Card Component
 const ServiceCard = ({ title, features, buttonText, buttonHref, index }) => {

@@ -3,12 +3,12 @@ import React, { useEffect } from "react";
 // Data for Why Choose items
 const whyUsData = [
   {
-    title: "Results‑first",
+    title: "Results-first",
     description: "We obsess over business metrics, not vanity stats.",
   },
   {
     title: "Speed & Scale",
-    description: "Modern stacks and battle‑tested playbooks to go faster.",
+    description: "Modern stacks and battle-tested playbooks to go faster.",
   },
   {
     title: "Ownership",
@@ -16,7 +16,7 @@ const whyUsData = [
   },
   {
     title: "Clarity",
-    description: "Transparent roadmaps, crisp reporting, and weekly wins.",
+    description: "Transparent roadmap, crisp reporting, and weekly wins.",
   },
 ];
 

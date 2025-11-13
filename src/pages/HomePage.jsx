@@ -71,7 +71,7 @@ export default function Hero() {
         digital products
       </h1>
       <p className="text-[#9fb6c9] mb-6">
-        E‑commerce Management • Website & App Development • Digital Marketing
+        E-commerce Management • Website & App Development • Digital Marketing
       </p>
 
       <div className="flex flex-wrap gap-3 mb-6">

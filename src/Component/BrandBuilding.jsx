@@ -5,7 +5,7 @@ const brandCards = [
   {
     icon: <FaLightbulb className="text-yellow-500 text-4xl" />,
     title: "Strategy & Planning",
-    description: "Data-driven strategies to define your brand’s voice.",
+    description: "Data-driven strategies to define your brand's voice.",
   },
   {
     icon: <FaPalette className="text-pink-500 text-4xl" />,
