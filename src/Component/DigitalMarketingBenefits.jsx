@@ -86,7 +86,7 @@ const BenefitCard = ({ item }) => {
 
 export default function DigitalMarketingBenefits() {
   return (
-    <div className={`py-12 md:py-14 px-4 md:px-8 font-sans antialiased bg-[#0b1324]`}>
+    <div className={`py-12 md:py-14 px-4 md:px-8 font-sans antialiased`}>
       {/* Header */}
       <div className="text-center mb-10 max-w-4xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-extrabold  bg-clip-text text-white">

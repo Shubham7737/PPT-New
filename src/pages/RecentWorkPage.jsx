@@ -18,7 +18,7 @@ const Cards = [
   },
 ];
 
-const Card = ({ card, isMobile }) => {
+const Card = ({ card, isMobile, index }) => {
   const ref = useRef();
   const [visible, setVisible] = useState(false);
 
@@ -29,7 +29,7 @@ const Card = ({ card, isMobile }) => {
           if (entry.isIntersecting) setVisible(true);
         });
       },
-      { threshold: 0, rootMargin: "0px 0px -100px 0px" }
+      { threshold: 0.2 }
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -41,9 +41,10 @@ const Card = ({ card, isMobile }) => {
   return (
     <div
       ref={ref}
-      className={`flex flex-col rounded-xl overflow-hidden transform transition-all duration-700 ease-out ${
-        visible ? "opacity-100 translate-y-0 scale-100" : "opacity-0 translate-y-16 scale-90"
-      } ${!isMobile ? "hidden sm:flex max-w-sm" : "flex-shrink-0"}`}
+      className={`flex flex-col rounded-xl overflow-hidden transform
+        transition-all duration-[100ms] ease-[cubic-bezier(0.22,0.61,0.36,1)]
+        ${visible ? "opacity-100 translate-x-0" : "-translate-x-8 opacity-0"}
+        ${!isMobile ? "hidden sm:flex max-w-sm" : "flex-shrink-0"}`}
       style={{
         background: "linear-gradient(to right, #191e2b, #00c6e6)",
         border: "1px solid #0f2b46",
@@ -51,13 +52,14 @@ const Card = ({ card, isMobile }) => {
         width: isMobile ? "100px" : "auto",
         height: isMobile ? "150px" : "auto",
         padding: isMobile ? "4px" : "0",
+        transitionDelay: `${index * 150}ms`, // Stagger effect
       }}
     >
       <img
         src={card.image}
         alt={card.title}
         className={`${
-          isMobile ? "w-full h-24 rounded-md" : "w-full h-64 rounded-t-xl object-cover"
+          isMobile ? "w-full h-24 rounded-md object-cover" : "w-full h-64 rounded-t-xl object-cover"
         }`}
       />
       <div className={`flex flex-col items-start ${isMobile ? "mt-1" : "p-3"}`}>
@@ -82,25 +84,27 @@ const Card = ({ card, isMobile }) => {
 
 export default function RecentWork() {
   return (
-    <section className="py-10 px-4 md:px-14" id="recent-work">
-      <div className="text-center mb-8">
-        <p className="text-[#00d4ff] font-semibold">Recent Work</p>
-        <h1 className="text-3xl md:text-4xl font-bold text-white mt-2">
+    <section className="py-6 px-4 md:px-14" id="recent-work">
+      <div className="text-center mb-6">
+        <p className="text-4xl font-extrabold mb-2 text-[#e6f3ff] drop-shadow-[0_0_15px_rgba(0,212,255,0.13)]">
+          Recent Work
+        </p>
+        <h1 className="text-xl sm:text-xl md:text-4xl font-bold text-[#9fb6c9] mt-2">
           A quick peek at the type of experiences we deliver
         </h1>
       </div>
 
       {/* Desktop / Tablet Grid */}
-      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="hidden sm:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {Cards.map((card, idx) => (
-          <Card key={idx} card={card} isMobile={false} />
+          <Card key={idx} card={card} isMobile={false} index={idx} />
         ))}
       </div>
 
       {/* Mobile Horizontal Scroll */}
-      <div className="flex sm:hidden space-x-4 overflow-x-auto px-2 justify-center">
+      <div className="flex sm:hidden space-x-4 overflow-x-auto px-2 justify-center items-center scrollbar-thin scrollbar-thumb-[#00d4ff] scrollbar-track-transparent">
         {Cards.map((card, idx) => (
-          <Card key={idx} card={card} isMobile={true} />
+          <Card key={idx} card={card} isMobile={true} index={idx} />
         ))}
       </div>
     </section>

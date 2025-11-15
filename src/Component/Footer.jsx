@@ -15,7 +15,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-[#0f2b46] py-8 px-6 bg-[#0b1324]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between gap-8 md:gap-0">
+      <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-10">
 
         {/* Services */}
         <div className="flex flex-col space-y-1">
@@ -23,7 +23,7 @@ export default function Footer() {
           <p className={linkClass}>E-Commerce Management</p>
           <p className={linkClass}>Digital Marketing</p>
           <p className={linkClass}>Website Development</p>
-          <p className={linkClass}>App Development</p>
+          <p className={linkClass}>Mobile App Development</p>
         </div>
 
         {/* Technologies */}
@@ -39,7 +39,7 @@ export default function Footer() {
         <div className="flex flex-col space-y-1">
           <h2 className="text-white font-semibold mb-2">Let's Work Together</h2>
           <p className={linkClass}>📱 +91 0000000000</p>
-          <p className={linkClass}>📧 contact@protechtouch.com</p>
+          <p className={`${linkClass} text-sm sm:text-base md:text-base`}>📧 contact@protechtouch.com</p>
           <p className={linkClass}>📍 Vashali Nagar, Jaipur 302021</p>
         </div>
 

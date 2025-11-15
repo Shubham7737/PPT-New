@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Data for the service cards
 const servicesData = [
@@ -11,29 +12,16 @@ const servicesData = [
       "Inventory management & performance analytics",
     ],
     buttonText: "Get a plan",
-    buttonHref: "#contact",
   },
   {
-  title: "Website Development",
-  features: [
-    "Custom responsive websites for all devices",
-    "SEO-ready & fast-loading pages",
-    "SPA (Single Page Application) & CMS integrations (WordPress, Strapi)",
-    "Landing pages & analytics to convert visitors",
-  ],
-  buttonText: "Start a project",
-  buttonHref: "#contact",
-},
-  {
-    title: "App Development",
+    title: "Website Development",
     features: [
-      "iOS & Android apps with single codebase (React Native / Flutter)",
-      "Prototyping to production deployment",
-      "Clean UI/UX design system",
-      "Firebase integration, payment gateways & authentication",
+      "Custom responsive websites for all devices",
+      "SEO-ready & fast-loading pages",
+      "SPA (Single Page Application) & CMS integrations (WordPress, Strapi)",
+      "Landing pages & analytics to convert visitors",
     ],
-    buttonText: "Build an app",
-    buttonHref: "#contact",
+    buttonText: "Start a project",
   },
   {
     title: "Digital Marketing",
@@ -44,18 +32,26 @@ const servicesData = [
       "Performance tracking & reporting dashboards",
     ],
     buttonText: "Boost growth",
-    buttonHref: "#contact",
+  },
+  {
+    title: "Mobile App Development",
+    features: [
+      "iOS & Android apps with single codebase (React Native / Flutter)",
+      "Prototyping to production deployment",
+      "Clean UI/UX design system",
+      "Firebase integration, payment gateways & authentication",
+    ],
+    buttonText: "Build an app",
   },
 ];
 
-
-
 // Individual Card Component
-const ServiceCard = ({ title, features, buttonText, buttonHref, index }) => {
+const ServiceCard = ({ title, features, buttonText }) => {
+  const navigate = useNavigate();
   const cardRef = useRef(null);
   const [visible, setVisible] = useState(false);
 
-  // IntersectionObserver for scroll popup effect
+  // Scroll animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -70,14 +66,20 @@ const ServiceCard = ({ title, features, buttonText, buttonHref, index }) => {
     );
 
     if (cardRef.current) observer.observe(cardRef.current);
-
     return () => observer.disconnect();
   }, []);
 
-  const isHighlighted = index >= 2;
+  // Button click logic
+  const handleButtonClick = () => {
+    if (title === "E-commerce Management") navigate("/ecommerce-service");
+    else if (title === "Website Development") navigate("/website-development");
+    else if (title === "Digital Marketing") navigate("/digital-marketing")
+      else if (title === "Mobile App Development") navigate("/app-page")
+    else alert(`${title} button clicked!`);
+  };
 
-  const cardClasses = `border border-[#0f2b46] shadow-[0_0_15px_rgba(0,212,255,0.08)] bg-gradient-to-r from-fuchsia-500 to-cyan-500`;
-
+  const cardClasses =
+    "border border-[#0f2b46] shadow-[0_0_15px_rgba(0,212,255,0.08)] bg-gradient-to-r from-[#191e2b] to-[#00c6e6]";
   const hoverClasses =
     "hover:shadow-[0_0_25px_rgba(0,212,255,0.15)] hover:border-[#00d4ff]";
 
@@ -85,11 +87,14 @@ const ServiceCard = ({ title, features, buttonText, buttonHref, index }) => {
     <div
       ref={cardRef}
       className={`p-6 rounded-xl transition-all duration-700 transform ${
-        visible ? "opacity-100 scale-100 translate-y-0 rotate-0" : "opacity-0 scale-90 translate-y-10 rotate-2"
+        visible
+          ? "opacity-100 scale-100 translate-y-0 rotate-0"
+          : "opacity-0 scale-90 translate-y-10 rotate-2"
       } ${cardClasses} ${hoverClasses}`}
       style={{ perspective: "800px" }}
     >
-      <h3 className="text-xl font-bold mb-4 text-black">{title}</h3>
+      <h3 className="text-xl font-bold mb-4 text-white">{title}</h3>
+
       <ul className="text-white space-y-3 mb-6 min-h-[140px]">
         {features.map((feature, i) => (
           <li key={i} className="flex items-start">
@@ -98,15 +103,15 @@ const ServiceCard = ({ title, features, buttonText, buttonHref, index }) => {
           </li>
         ))}
       </ul>
-     <a
-  href={buttonHref}
-  className="inline-block text-center rounded-lg px-6 py-2 border border-[#0f2b46] 
-             bg-gradient-to-r from-[#00d4ff] to-[#00ff8c] text-gray-900 font-medium 
-             hover:opacity-90 transition duration-150 ease-in-out"
->
-  {buttonText}
-</a>
 
+      <button
+        onClick={handleButtonClick}
+         className="inline-block text-center rounded-lg px-4 py-1 border border-[#0f2b46]
+        bg-gradient-to-r from-[#00d4ff] to-[#00ff8c] text-gray-900 font-medium
+        hover:opacity-90 transition duration-150 ease-in-out text-sm"
+      >
+        {buttonText}
+      </button>
     </div>
   );
 };
@@ -116,13 +121,18 @@ export default function Services() {
   return (
     <section
       id="services"
-      className="relative z-10 py-12 md:py-16 px-4 md:px-16 overflow-hidden bg-[#0b1324] text-black"
+      className="relative z-10 py-12 md:py-16 px-4 md:px-16 overflow-hidden text-black"
     >
       {/* Background Dots */}
       <div className="absolute inset-0 opacity-10">
         <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
           <defs>
-            <pattern id="dot-pattern" width="80" height="80" patternUnits="userSpaceOnUse">
+            <pattern
+              id="dot-pattern"
+              width="80"
+              height="80"
+              patternUnits="userSpaceOnUse"
+            >
               <circle cx="2" cy="2" r="2" fill="#00d4ff"></circle>
             </pattern>
           </defs>
@@ -149,8 +159,6 @@ export default function Services() {
               title={service.title}
               features={service.features}
               buttonText={service.buttonText}
-              buttonHref={service.buttonHref}
-              index={index}
             />
           ))}
         </div>

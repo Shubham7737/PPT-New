@@ -53,12 +53,12 @@ const StepCard = ({ step }) => {
       `}
     >
       <div className="relative w-full max-w-[260px] aspect-square flex items-center justify-center mx-auto mb-4 md:mb-6">
-        <div className="absolute w-full h-full border border-gray-700 rounded-full shadow-2xl bg-gray-800 flex items-center justify-center transition-shadow duration-300">
+        <div className="bg-gradient-to-r from-[#00d4ff] to-[#56f6a6] absolute w-full h-full border border-gray-700 rounded-full shadow-2xl bg-gray-800 flex items-center justify-center transition-shadow duration-300">
           <div className="px-4 text-center">
             <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2 text-white">
               {step.title}
             </h3>
-            <p className="text-sm md:text-base text-gray-300">{step.description}</p>
+            <p className="text-sm md:text-base text-white">{step.description}</p>
           </div>
         </div>
 

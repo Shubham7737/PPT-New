@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
-body {
+/* body {
   background-color: #f8fafc;
   font-family: 'Poppins', sans-serif;
-}
+} */
 
 /* tailwind.css ya globals.css */
 .reveal {
@@ -16,6 +16,3 @@ body {
   transform: translateY(0);
 }
 
-#market-box{
-  
-}
