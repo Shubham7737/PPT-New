@@ -70,7 +70,7 @@
   top: 0px;
 }
 .panel-card:nth-of-type(3) {
-  top: 130px;
+  top: 135px;
   right: 45px;
 }
 .panel-card:nth-of-type(4) {
@@ -87,7 +87,6 @@
   width: min(280px, 90%);
   height: 200px;              /* ➜ Fixed Height */
   backdrop-filter: blur(8px);
-
   display: flex;
   flex-direction: column;
   justify-content: center;    /* ➜ Vertical Centering */

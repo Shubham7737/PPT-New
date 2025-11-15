@@ -42,7 +42,7 @@ const Card = ({ card, isMobile }) => {
     <div
       ref={ref}
       // 💥 CORRECTED: Used -translate-x-16 for Left-to-Right animation 💥
-      className={`flex flex-col rounded-xl overflow-hidden transform transition-all duration-300 ease-out ${
+      className={`flex flex-col rounded-xl overflow-hidden transform transition-all duration-900 ease-out ${
         visible ? "opacity-100 translate-x-0 scale-100" : "opacity-0 -translate-x-16 scale-90"
       } ${!isMobile ? "hidden sm:flex max-w-sm" : "flex-shrink-0"}`}
       style={{

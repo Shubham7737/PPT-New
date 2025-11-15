@@ -96,8 +96,8 @@ const Hero = () => {
           </svg>
 
           <div className="panel-card tilt">
-            <h3>Growth Engine</h3>
-            <p>SEO + Ads + CRO + Automation. We stitch channels that convert.</p>
+            {/* <h3>Growth Engine</h3>
+            <p>SEO + Ads + CRO + Automation. We stitch channels that convert.</p> */}
           </div>
 
           <div

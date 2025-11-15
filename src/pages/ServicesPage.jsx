@@ -79,14 +79,14 @@ const ServiceCard = ({ title, features, buttonText }) => {
   };
 
   const cardClasses =
-    "rounded-[18px] border-[2px] border-[#123355] shadow-[0_0_15px_rgba(0,212,255,0.08)] bg-gradient-to-r from-[#191e2b] to-[#00c6e6]";
+    "rounded-[25px] border-[2px] border-[#123355] shadow-[0_0_15px_rgba(0,212,255,0.08)] bg-gradient-to-r from-[#191e2b] to-[#00c6e6]";
   const hoverClasses =
     "hover:shadow-[0_0_25px_rgba(0,212,255,0.15)] hover:border-[#00d4ff]";
 
   return (
     <div
       ref={cardRef}
-      className={`p-6 rounded-xl transition-all duration-700 transform ${
+      className={`p-6  transition-all duration-700 transform ${
         visible
           ? "opacity-100 scale-100 translate-y-0 rotate-0"
           : "opacity-0 scale-90 translate-y-10 rotate-2"
@@ -107,7 +107,7 @@ const ServiceCard = ({ title, features, buttonText }) => {
       <button
         onClick={handleButtonClick}
          className="inline-block text-center rounded-lg px-4 py-1 border border-[#0f2b46]
-        bg-gradient-to-r from-[#00d4ff] to-[#00ff8c] text-gray-900 font-medium
+        bg-gradient-to-r from-[#00d4ff] to-[#00ff8c] text-white font-medium
         hover:opacity-90 transition duration-150 ease-in-out text-sm"
       >
         {buttonText}
@@ -152,7 +152,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
           {servicesData.map((service, index) => (
             <ServiceCard
               key={index}
