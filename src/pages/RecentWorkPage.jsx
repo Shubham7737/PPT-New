@@ -29,7 +29,7 @@ const Card = ({ card, isMobile, index }) => {
           if (entry.isIntersecting) setVisible(true);
         });
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     if (ref.current) observer.observe(ref.current);
@@ -40,26 +40,27 @@ const Card = ({ card, isMobile, index }) => {
 
   return (
     <div
-      ref={ref}
-      className={`flex flex-col rounded-xl overflow-hidden transform
-        transition-all duration-[100ms] ease-[cubic-bezier(0.22,0.61,0.36,1)]
-        ${visible ? "opacity-100 translate-x-0" : "-translate-x-8 opacity-0"}
-        ${!isMobile ? "hidden sm:flex max-w-sm" : "flex-shrink-0"}`}
-      style={{
-        background: "linear-gradient(to right, #191e2b, #00c6e6)",
-        border: "1px solid #0f2b46",
-        boxShadow: "0 0 15px rgba(0,212,255,0.08)",
-        width: isMobile ? "100px" : "auto",
-        height: isMobile ? "150px" : "auto",
-        padding: isMobile ? "4px" : "0",
-        transitionDelay: `${index * 150}ms`, // Stagger effect
-      }}
-    >
+  ref={ref}
+  className={`flex flex-col rounded-xl overflow-hidden transform transition-all duration-700 ease-out
+    ${visible ? "opacity-100 translate-x-0" : "-translate-x-16 opacity-0"}
+    ${!isMobile ? "hidden sm:flex max-w-sm" : "flex-shrink-0"}`}
+  style={{
+    background: "linear-gradient(to right, #191e2b, #00c6e6)",
+    border: "1px solid #0f2b46",
+    boxShadow: "0 0 15px rgba(0,212,255,0.08)",
+    width: isMobile ? "120px" : "auto",
+    height: isMobile ? "160px" : "auto",
+    padding: isMobile ? "4px" : "0",
+    // transitionDelay: `${index * 150}ms`,  <-- REMOVE THIS LINE
+  }}
+>
       <img
         src={card.image}
         alt={card.title}
         className={`${
-          isMobile ? "w-full h-24 rounded-md object-cover" : "w-full h-64 rounded-t-xl object-cover"
+          isMobile ? "w-full h-28 rounded-md object-cover" : "w-full h-64 rounded-t-xl object-cover"
+        } transform transition-transform duration-700 ${
+          visible ? "translate-x-0" : "-translate-x-10"
         }`}
       />
       <div className={`flex flex-col items-start ${isMobile ? "mt-1" : "p-3"}`}>
