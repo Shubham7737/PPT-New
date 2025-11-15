@@ -21,10 +21,10 @@ export default function Body() {
       <MarqueeTwo />
       <div id="work"><RecentWorkPage /></div>
       <MarqueeThree />
-     <div id="why-us"><WhyChoosePage /></div>
       {/* <BrandBuilding /> */}
       <DigitalMarketingProcess />
       <DigitalMarketingBenefits />
+     <div id="why-us"><WhyChoosePage /></div>
       <ContactPage />
       <Footer />
     </div>

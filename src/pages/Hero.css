@@ -128,6 +128,10 @@
   .hero-panel{
      left: 40px;
   }
+  #first{
+    font-size: clamp(20px, 8vw, 53px);
+    font-weight: bold;
+  }
 }
 
 

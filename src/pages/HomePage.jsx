@@ -46,7 +46,7 @@ const Hero = () => {
     <section className="hero" id="home">
       <div className="container">
         <div className="hero-content">
-          <h1 className="title reveal show">
+          <h1 className="title reveal show" id="first">
             We build{" "}
             <span className="accent gradient-text swapper">{currentWord}</span>
             <br />

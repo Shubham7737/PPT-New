@@ -15,7 +15,7 @@ export default function Contact() {
     <section id="contact" className="section contact relative z-10 py-20 px-4 md:px-16">
       <div className="contact-card max-w-[1100px] mx-auto border border-[#123355] rounded-[18px] p-4 md:p-6 shadow-[var(--ring)] bg-gradient-to-b from-[#0e1b32] to-[#091325]">
         
-        <h2 className="text-3xl font-bold mb-2 text-white">Let's build something great</h2>
+        <h2 className="text-3xl font-bold mb-2 text-white">Let's build something great together</h2>
         <p className="text-[#cfe7ff] mb-6">Tell us about your project. We'll reply within 24 hours.</p>
         
         <form className="contact-form grid gap-3" onSubmit={handleSubmit}>
@@ -69,7 +69,7 @@ export default function Contact() {
             type="submit"
             className="btn btn-primary magnetic inline-block rounded-lg px-6 py-3 bg-[#00d4ff] text-[#091325] font-medium border border-[#0f2b46] hover:opacity-90 transition duration-150"
           >
-            Request Proposal
+            <span className="text-xl">Book your call</span>
           </button>
 
           {/* Success Message */}
@@ -83,7 +83,7 @@ export default function Contact() {
         </form>
 
         {/* Contact Meta */}
-        <div className="contact-meta flex flex-wrap gap-3 mt-4">
+        <div className="contact-meta flex flex-wrap gap-3 mt-4 justify-center">
           <a href="tel:+91-0000000000" className="chip inline-block px-4 py-2 rounded-full border border-[#123355] text-[#cfe7ff] text-sm">
             Call Us
           </a>

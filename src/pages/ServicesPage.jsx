@@ -79,7 +79,7 @@ const ServiceCard = ({ title, features, buttonText }) => {
   };
 
   const cardClasses =
-    "rounded-[25px] border-[2px] border-[#123355] shadow-[0_0_15px_rgba(0,212,255,0.08)] bg-gradient-to-r from-[#191e2b] to-[#00c6e6]";
+    "rounded-[20px] border-[3px] border-[#123355] shadow-[0_0_15px_rgba(0,212,255,0.08)] bg-gradient-to-r from-[#191e2b] to-[#00c6e6]";
   const hoverClasses =
     "hover:shadow-[0_0_25px_rgba(0,212,255,0.15)] hover:border-[#00d4ff]";
 

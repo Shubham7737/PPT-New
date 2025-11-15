@@ -24,7 +24,7 @@ const whyUsData = [
 const WhyCard = ({ title, description, delay }) => {
   return (
     <div
-      className={`p-8 rounded-xl shadow-md transform transition duration-500 ease-out opacity-0 tilt h-[200px] border border-[#0f2b46] bg-gradient-to-r from-[#191e2b] to-[#00c6e6]
+      className={`p-8 rounded-xl shadow-md transform transition duration-500 ease-out opacity-0 tilt h-[200px] border-[3px]  border-[#0f2b46] bg-gradient-to-r from-[#191e2b] to-[#00c6e6]
                   hover:scale-105 hover:shadow-lg`}
       style={{
         transitionDelay: `${delay}s`,
