@@ -26,7 +26,9 @@ const StepCard = ({ step }) => {
 
  const handleClick = () => {
   if (step.number === 1) navigate("/analyze-strategize")
- }
+  if (step.number === 2) navigate("/ExecutePrecision")
+  if (step.number === 3) navigate("/MeasureOptimize")
+   }
 
 
 

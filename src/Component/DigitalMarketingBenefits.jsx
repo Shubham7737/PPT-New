@@ -1,4 +1,6 @@
+import { StepBack } from 'lucide-react';
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // Data for the four benefit cards
 const benefitData = [
@@ -27,6 +29,22 @@ const benefitData = [
 const BenefitCard = ({ item }) => {
   const cardRef = useRef();
   const [visible, setVisible] = useState(false);
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    if (item.title === 'Support Brand Value') {
+      navigate("/supportBrandValue");
+    }
+    if (item.title === "Boost User Relationship") {
+      navigate("/boostUserRelationship")
+    } 
+    if (item.title === "Drive Web Traffic") {
+      navigate("/DriveWebTraffic")
+    } 
+    if (item.title === "Stay on Top") {
+      navigate("/StayOnTop")
+    } 
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -50,7 +68,7 @@ const BenefitCard = ({ item }) => {
 
   return (
     <div
-      ref={cardRef}
+      ref={cardRef} onClick={handleClick}
       className={`
         p-6 md:p-8 rounded-xl text-center flex flex-col items-center justify-start
         bg-gradient-to-r from-[#191e2b] to-[#00c6e6]  border-t-4 border-l-2 border-gray-700

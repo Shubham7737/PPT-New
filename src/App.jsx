@@ -10,6 +10,12 @@ import DigitalDetailPage from "./pages/DigitalDetailPage";
 import AppPage from "./pages/AppPage";
 import useScrollToTop from "./Hooks/useScrollToTop";
 import AnalyzeStrategize from "./Component/AnalyzeStrategize"
+import ExecutePrecision from "./Component/ExecutePrecision";
+import MeasureOptimize from "./Component/MeasureOptimize";
+import SupportBrandValue from "./Component/SupportBrandValue";
+import BoostUserRelationship from "./Component/BoostUserRelationship";
+import DriveWebTraffic from "./Component/DriveWebTraffic";
+import StayOnTop from "./Component/StayOnTop";
 
 
 
@@ -37,6 +43,15 @@ useScrollToTop();
             <Route path="/digital-marketing" element={<DigitalDetailPage />} />
             <Route path="/app-page" element={<AppPage />} />
             <Route path="/analyze-strategize" element={<AnalyzeStrategize />} />
+            <Route path="/ExecutePrecision" element={<ExecutePrecision />} />
+            <Route path="/MeasureOptimize" element={<MeasureOptimize />} />
+            
+          {/* {Support routing} */}
+          <Route path="/supportBrandValue" element={<SupportBrandValue />} />
+           <Route path="/boostUserRelationship" element={<BoostUserRelationship />} />
+          <Route path="/DriveWebTraffic" element={<DriveWebTraffic />} />
+          <Route path="/StayOnTop" element={<StayOnTop />} />
+
           </Routes>
         </div>
       </div>
