@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const processSteps = [
   {
@@ -21,6 +22,13 @@ const processSteps = [
 const StepCard = ({ step }) => {
   const cardRef = useRef(null);
   const [visible, setVisible] = useState(false);
+  const navigate = useNavigate();
+
+ const handleClick = () => {
+  if (step.number === 1) navigate("/analyze-strategize")
+ }
+
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,7 +52,7 @@ const StepCard = ({ step }) => {
 
   return (
     <div
-      ref={cardRef}
+      ref={cardRef} onClick={handleClick}
       className={`
         flex-1 flex flex-col items-center text-center p-2 md:p-3 relative z-10 w-full md:max-w-xs
         transition-transform duration-700 transform

@@ -424,44 +424,64 @@ export default function EcommerceManagementPage() {
           Our Core Management Services
         </h2>
         {servicesContent.map((service, i) => (
-          <div
-            key={i}
-            className={`flex flex-col items-center gap-10 p-6 md:p-10 rounded-3xl border border-gray-800 bg-blue-50/10 
-                                    ${
-                                      i % 2 === 1
-                                        ? "md:flex-row-reverse"
-                                        : "md:flex-row"
-                                    } 
-                                    shadow-2xl hover:shadow-indigo-500/20 transition duration-500`}
-          >
-            <div className="md:w-1/2 space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="p-3 rounded-full bg-indigo-600/20 shadow-lg">
-                  {service.icon}
-                </div>
-                <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-sky-300">
-                  {service.title}
-                </h3>
-              </div>
-              <p className="text-gray-100 text-lg leading-relaxed">
-                {service.content}
-              </p>
-            </div>
-            <div className="overflow-hidden rounded-2xl w-full md:w-1/2 shadow-xl border border-gray-700">
-              {/* Note: In a real app, images for services would be unique */}
-              <img
-                src={sliderImages[service.imageIndex % sliderImages.length]}
-                alt={`Service ${i}: ${service.title}`}
-                className="w-full h-64 object-cover transform transition duration-700 hover:scale-105"
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src =
-                    "https://placehold.co/600x400/1e293b/a5b4fc?text=Service+Visual";
-                }}
-              />
-            </div>
-          </div>
-        ))}
+  <div
+    key={i}
+    // 1. Added 'relative' to the card wrapper for absolute positioning of the button.
+    // 2. The main flex structure (flex-col, md:flex-row/reverse) is preserved for content layout.
+    className={`
+      flex flex-col items-center gap-10 p-6 md:p-10 rounded-3xl 
+      border border-gray-800 bg-blue-50/10 relative 
+      shadow-2xl hover:shadow-indigo-500/20 transition duration-500
+      
+      ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'}
+    `}
+  >
+    {/* --- Service Content Area --- */}
+    <div className="md:w-1/2 space-y-6">
+      <div className="flex items-center space-x-4">
+        <div className="p-3 rounded-full bg-indigo-600/20 shadow-lg">
+          {service.icon}
+        </div>
+        <h3 className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-300 to-sky-300">
+          {service.title}
+        </h3>
+      </div>
+      <p className="text-gray-100 text-lg leading-relaxed">
+        {service.content}
+      </p>
+    </div>
+
+    {/* --- Image/Visual Area --- */}
+    <div className="overflow-hidden rounded-2xl w-full md:w-1/2 shadow-xl border border-gray-700">
+      <img
+        src={sliderImages[service.imageIndex % sliderImages.length]}
+        alt={`Service ${i}: ${service.title}`}
+        className="w-full h-64 object-cover transform transition duration-700 hover:scale-105"
+        onError={e => {
+          e.currentTarget.onerror = null;
+          e.currentTarget.src =
+            "https://placehold.co/600x400/1e293b/a5b4fc?text=Service+Visual";
+        }}
+      />
+    </div>
+
+    {/* --- Call to Action Button (Optimized for Bottom Right) --- */}
+    <button
+      className=" mt-5
+        w-max px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-lg 
+        hover:bg-teal-500 transition shadow-md
+        
+        // Mobile (default): Show the button below the content/image
+        mt-1 ml-auto 
+        
+        // Desktop (md): Position it absolutely at the bottom right of the card (p-10 spacing)
+        md:absolute md:bottom-5 md:right-5 md:mt-0 md:ml-0
+      "
+    >
+      More Info
+    </button>
+  </div>
+))}
       </section>
 
       {/* Highlight Cards (Enhanced) */}
@@ -473,7 +493,7 @@ export default function EcommerceManagementPage() {
           {highlightCards.map((item, index) => (
             <div
               key={index}
-              className="p-4 rounded-xl shadow-lg border border-indigo-700/50 text-center flex flex-col items-center justify-center h-28 hover:scale-[1.05] transform transition duration-300"
+              className="p-4 rounded-xl shadow-lg border-1 border-[#4D4DFF] text-center flex flex-col items-center justify-center h-28 hover:scale-[1.05] transform transition duration-300"
             >
               <span className="text-indigo-400 mb-2">{item.icon}</span>
               <p className="font-medium text-sm text-gray-200">{item.text}</p>

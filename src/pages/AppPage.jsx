@@ -193,16 +193,19 @@ export default function MobileAppLandingPage() {
               <Code size={40} className="mx-auto mb-4 text-green-400 animate-bounce-slow" />
               <h3 className="text-2xl font-bold mb-2 text-white">Native iOS/Android</h3>
               <p className="text-gray-300">Unmatched performance and access to platform-specific features using Swift/Kotlin.</p>
+              <button className='px-4 py-2 font-semibold text-white bg-indigo-400 rounded-lg hover:bg-indigo-600 transition duration-300 mt-3'>More info</button>
             </div>
             <div className="p-6 bg-blue-50/10 border border-gray-700 rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:bg-white/5">
               <Layers size={40} className="mx-auto mb-4 text-indigo-400 animate-bounce-slow delay-100" />
               <h3 className="text-2xl font-bold mb-2 text-white">Cross-Platform (React Native)</h3>
               <p className="text-gray-300">Efficiency and code reusability for faster deployment on both major app stores.</p>
+               <button className='px-4 py-2 font-semibold text-white bg-indigo-400 rounded-lg hover:bg-indigo-600 transition duration-300 mt-3'>More info</button>
             </div>
             <div className="p-6 bg-blue-50/10 border border-gray-700 rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:bg-white/5">
               <Figma size={40} className="mx-auto mb-4 text-purple-400 animate-bounce-slow delay-200" />
               <h3 className="text-2xl font-bold mb-2 text-white">UX/UI Design</h3>
               <p className="text-gray-300">Beautiful, intuitive interfaces crafted for maximum user engagement and retention.</p>
+              <button className='px-4 py-2 font-semibold text-white bg-indigo-400 rounded-lg hover:bg-indigo-600 transition duration-300 mt-3'>More info</button>
             </div>
           </div>
         </div>
@@ -275,35 +278,61 @@ export default function MobileAppLandingPage() {
 
       {/* 4. Feature Cards (Technology Stack) */}
       <section className="py-20 bg-transparent border-b border-gray-800">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
-            Our Technology Stack & Assurance
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8"> 
-            <div className='bg-blue-50/10'>
-            <FeatureCard
-              icon={<Code size={32} className="text-white" />}
-              title="Modern Languages"
-              description="We primarily use Swift, Kotlin, and TypeScript/React Native to ensure long-term stability and performance."
-            />
-            </div>
-            <div className='bg-blue-50/10'>
-            <FeatureCard
-              icon={<Layers size={32} className="text-white" />}
-              title="Cloud Native Backends"
-              description="Scalable, secure, and resilient infrastructure built on Firebase, AWS, or Azure."
-            />
-            </div>
-            <div className='bg-blue-50/10'>
-            <FeatureCard
-              icon={<Rocket size={32} className="text-white" />}
-              title="Guaranteed App Store Approval"
-              description="We handle all submission and policy compliance to ensure a smooth, headache-free launch."
-            />
-            </div>
-          </div>
-        </div>
-      </section>
+  <div className="container mx-auto px-6">
+    <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
+      Our Technology Stack & Assurance
+    </h2>
+    
+    <div className="grid md:grid-cols-3 gap-8"> 
+      
+      {/* CARD 1: Modern Languages */}
+      <div className='bg-blue-50/10 p-6 rounded-lg flex flex-col justify-between'>
+        <FeatureCard
+          icon={<Code size={32} className="text-white" />}
+          title="Modern Languages"
+          description="We primarily use Swift, Kotlin, and TypeScript/React Native to ensure long-term stability and performance."
+        />
+        {/* Button placed inside the card wrapper */}
+        <button 
+          className='mt-6 px-4 py-2 font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition duration-300 w-full'
+        >
+          More Info
+        </button>
+      </div>
+      
+      {/* CARD 2: Cloud Native Backends */}
+      <div className='bg-blue-50/10 p-6 rounded-lg flex flex-col justify-between'>
+        <FeatureCard
+          icon={<Layers size={32} className="text-white" />}
+          title="Cloud Native Backends"
+          description="Scalable, secure, and resilient infrastructure built on Firebase, AWS, or Azure."
+        />
+        {/* Button placed inside the card wrapper */}
+        <button 
+          className='mt-6 px-4 py-2 font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition duration-300 w-full'
+        >
+          More Info
+        </button>
+      </div>
+      
+      {/* CARD 3: Guaranteed App Store Approval */}
+      <div className='bg-blue-50/10 p-6 rounded-lg flex flex-col justify-between'>
+        <FeatureCard
+          icon={<Rocket size={32} className="text-white" />}
+          title="Guaranteed App Store Approval"
+          description="We handle all submission and policy compliance to ensure a smooth, headache-free launch."
+        />
+        {/* Button placed inside the card wrapper */}
+        <button 
+          className='mt-6 px-4 py-2 font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition duration-300 w-full'
+        >
+          More Info
+        </button>
+      </div>
+      
+    </div>
+  </div>
+</section>
 
       {/* 5. NEW: Card Slider Section (Replaces old paragraph section) */}
       <section className="py-16 md:py-24 bg-transparent border-b border-gray-800">

@@ -9,6 +9,7 @@ import WebsiteDetails from "./pages/WebsiteDetails";
 import DigitalDetailPage from "./pages/DigitalDetailPage";
 import AppPage from "./pages/AppPage";
 import useScrollToTop from "./Hooks/useScrollToTop";
+import AnalyzeStrategize from "./Component/AnalyzeStrategize"
 
 
 
@@ -35,6 +36,7 @@ useScrollToTop();
             <Route path="/website-development" element={<WebsiteDetails />} />
             <Route path="/digital-marketing" element={<DigitalDetailPage />} />
             <Route path="/app-page" element={<AppPage />} />
+            <Route path="/analyze-strategize" element={<AnalyzeStrategize />} />
           </Routes>
         </div>
       </div>

@@ -222,16 +222,19 @@ export default function DigitalDetailPage() {
               <Search size={40} className="mx-auto mb-4 text-indigo-400 animate-bounce-slow" />
               <h3 className="text-xl sm:text-2xl font-bold mb-2 text-white">Search Engine Optimization (SEO)</h3>
               <p className="text-gray-300">Achieve top rankings and sustainable organic traffic growth with our expert strategies.</p>
+              <button className='px-4 py-2 font-semibold text-white bg-indigo-400 rounded-lg hover:bg-indigo-600 transition duration-300 mt-3'>More info</button>
             </div>
             <div className="p-6 bg-blue-50/10 border border-gray-700 rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:bg-white/5">
               <Zap size={40} className="mx-auto mb-4 text-indigo-400 animate-bounce-slow delay-100" />
               <h3 className="text-xl sm:text-2xl font-bold mb-2 text-white">High-Performance PPC</h3>
               <p className="text-gray-300">Maximize ad spend efficiency with targeted paid campaigns across all major platforms.</p>
+              <button className='px-4 py-2 font-semibold text-white bg-indigo-400 rounded-lg hover:bg-indigo-600 transition duration-300 mt-3'>More info</button>
             </div>
             <div className="p-6 bg-blue-50/10 border border-gray-700 rounded-xl shadow-lg transition duration-300 hover:shadow-xl hover:bg-white/5">
               <Globe size={40} className="mx-auto mb-4 text-indigo-400 animate-bounce-slow delay-200" />
               <h3 className="text-xl sm:text-2xl font-bold mb-2 text-white">Social Media & Branding</h3>
               <p className="text-gray-300">Build a powerful brand presence and engage your audience where they spend their time.</p>
+              <button className='px-4 py-2 font-semibold text-white bg-indigo-400 rounded-lg hover:bg-indigo-600 transition duration-300 mt-3'>More info</button>
             </div>
           </div>
         </div>
