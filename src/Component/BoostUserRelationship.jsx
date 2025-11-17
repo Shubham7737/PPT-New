@@ -152,7 +152,7 @@ export default function BoostUserRelationship() {
             Boost User Relationship — Engage & Retain Customers
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            Long-term success depends on strong user relationships. We focus on building deep **trust**, encouraging repeat **engagement**, and creating loyal **advocates** for your business.
+            Long-term success depends on strong user relationships. We focus on building deep trust, encouraging repeat engagement, and creating loyal advocates for your business.
           </p>
         </header>
       </AnimatedSection>

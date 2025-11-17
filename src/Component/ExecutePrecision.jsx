@@ -87,27 +87,27 @@ export default function App() {
             <br className="hidden sm:block" /> Flawless Implementation & Scalable Growth
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-400 max-w-3xl mx-auto">
-            We transform strategic blueprints into tangible success. Our implementation framework leverages cutting-edge technology and rigorous quality assurance to deliver maximum **Return on Investment (ROI)** and measurable business expansion.
+            We transform strategic blueprints into tangible success. Our implementation framework leverages cutting-edge technology and rigorous quality assurance to deliver maximum Return on Investment (ROI) and measurable business expansion.
           </p>
         </header>
 
         {/* Section 1: Planning & Preparation */}
         <AnimatedSection title="Planning & Preparation" icon={ClipboardList}>
           <p className="text-gray-300 mb-4">
-            Proper execution starts with **thorough planning**. We meticulously map every step of the project lifecycle, allocate resources efficiently, and identify potential risks in advance. This upfront work ensures every launch is smooth and error-free.
+            Proper execution starts with thorough planning. We meticulously map every step of the project lifecycle, allocate resources efficiently, and identify potential risks in advance. This upfront work ensures every launch is smooth and error-free.
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-2 ml-4">
-            <li>Detailed **Resource Allocation** and cross-functional team responsibilities.</li>
-            <li>Agile **Timeline Planning** and continuous milestone tracking.</li>
-            <li>Proactive **Risk Analysis** and robust mitigation strategies.</li>
-            <li>Clearly defined **Project KPIs** and success metrics for accountability.</li>
+            <li>Detailed Resource Allocation and cross-functional team responsibilities.</li>
+            <li>Agile Timeline Planning and continuous milestone tracking.</li>
+            <li>Proactive Risk Analysis and robust mitigation strategies.</li>
+            <li>Clearly defined Project KPIs and success metrics for accountability.</li>
           </ul>
         </AnimatedSection>
 
         {/* Section 2: Technical Implementation */}
         <AnimatedSection title="Technical Implementation" icon={HardHat}>
           <p className="text-gray-300 mb-4">
-            From developing high-performance applications to deploying complex marketing campaigns, **technical execution is critical**. Our experts ensure all systems, integrations, and platforms are optimized for **performance, speed, and reliability**.
+            From developing high-performance applications to deploying complex marketing campaigns, technical execution is critical. Our experts ensure all systems, integrations, and platforms are optimized for performance, speed, and reliability.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mt-4 text-gray-300">
             <div className="p-4 bg-gray-800 rounded-lg">
@@ -115,15 +115,15 @@ export default function App() {
               <ul className="list-disc list-inside space-y-1 ml-4 text-sm">
                 <li>Pixel-perfect Responsive UI/UX implementation.</li>
                 <li>CMS, custom application, and e-commerce platform deployment.</li>
-                <li>Seamless **Third-party API Integration** and workflow automation.</li>
+                <li>Seamless Third-party API Integration and workflow automation.</li>
               </ul>
             </div>
             <div className="p-4 bg-gray-800 rounded-lg">
               <h3 className="font-semibold text-white mb-2 border-b border-gray-700 pb-1">Digital Marketing Deployment</h3>
               <ul className="list-disc list-inside space-y-1 ml-4 text-sm">
-                <li>Precision **Ad Campaign Setup** across major platforms (Google, Meta, etc.).</li>
-                <li>Advanced **Email Marketing** and lead nurturing automation.</li>
-                <li>Optimized content publishing and technical **SEO implementation**.</li>
+                <li>Precision Ad Campaign Setup across major platforms (Google, Meta, etc.).</li>
+                <li>Advanced Email Marketing and lead nurturing automation.</li>
+                <li>Optimized content publishing and technical SEO implementation.</li>
               </ul>
             </div>
           </div>
@@ -132,25 +132,25 @@ export default function App() {
         {/* Section 3: Quality Assurance & Testing */}
         <AnimatedSection title="Quality Assurance & Testing" icon={ShieldCheck}>
           <p className="text-gray-300 mb-4">
-            Execution is incomplete without validation. We run **extensive QA processes** to guarantee that every product and campaign functions flawlessly across all user environments. This proactive approach identifies and resolves issues **before** they impact end-users.
+            Execution is incomplete without validation. We run extensive QA processes to guarantee that every product and campaign functions flawlessly across all user environments. This proactive approach identifies and resolves issues before they impact end-users.
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-2 ml-4">
-            <li>Comprehensive **Cross-Browser & Device Testing** for universal compatibility.</li>
-            <li>In-depth **Performance Monitoring** and rigorous load testing.</li>
-            <li>Content and functional **Accuracy Checks** against compliance standards.</li>
-            <li>Meticulous campaign tracking and conversion funnel **verification**.</li>
+            <li>Comprehensive Cross-Browser & Device Testing for universal compatibility.</li>
+            <li>In-depth Performance Monitoring and rigorous load testing.</li>
+            <li>Content and functional Accuracy Checks against compliance standards.</li>
+            <li>Meticulous campaign tracking and conversion funnel verification.</li>
           </ul>
         </AnimatedSection>
 
         {/* Section 4: Collaboration & Communication */}
         <AnimatedSection title="Collaboration & Communication" icon={Users}>
           <p className="text-gray-300 mb-4">
-            Smooth execution relies on **tight collaboration and transparency**. We employ agile methodologies and systematic reporting to ensure the entire team, stakeholders, and clients are perfectly aligned at every stage of deployment.
+            Smooth execution relies on tight collaboration and transparency. We employ agile methodologies and systematic reporting to ensure the entire team, stakeholders, and clients are perfectly aligned at every stage of deployment.
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-2 ml-4">
-            <li>Disciplined **Agile Project Management** and regular sprint planning.</li>
+            <li>Disciplined Agile Project Management and regular sprint planning.</li>
             <li>Transparent daily and weekly progress reporting.</li>
-            <li>Streamlined stakeholder approvals and continuous **feedback integration**.</li>
+            <li>Streamlined stakeholder approvals and continuous feedback integration.</li>
             <li>Efficient team collaboration using centralized project tools.</li>
           </ul>
         </AnimatedSection>
@@ -158,11 +158,11 @@ export default function App() {
         {/* Section 5: Data-Driven Optimization */}
         <AnimatedSection title="Data-Driven Optimization" icon={TrendingUp}>
           <p className="text-gray-300 mb-4">
-            Our execution model is **inherently iterative**. We continuously track real-time performance, gather actionable insights, and optimize campaigns, websites, and apps for superior results, higher conversions, and maximizing ROI.
+            Our execution model is inherently iterative. We continuously track real-time performance, gather actionable insights, and optimize campaigns, websites, and apps for superior results, higher conversions, and maximizing ROI.
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-2 ml-4">
-            <li>Advanced **Analytics Setup** and customized KPI dashboard creation.</li>
-            <li>Systematic **A/B Testing** and multivariate experimentation to validate hypotheses.</li>
+            <li>Advanced Analytics Setup and customized KPI dashboard creation.</li>
+            <li>Systematic A/B Testing and multivariate experimentation to validate hypotheses.</li>
             <li>Prompt content and user experience (UX) adjustments based on behavioral data.</li>
             <li>Continuous ad spend optimization and strategic retargeting initiatives.</li>
           </ul>
@@ -171,11 +171,11 @@ export default function App() {
         {/* Section 6: Reporting & Insights */}
         <AnimatedSection title="Reporting & Insights" icon={BarChart2}>
           <p className="text-gray-300 mb-4">
-            **Transparency is non-negotiable**. We deliver detailed, easily understandable reports covering project status, campaign results, and direct business impact. This empowers clients to clearly measure success and confidently plan their next strategic steps.
+            Transparency is non-negotiable. We deliver detailed, easily understandable reports covering project status, campaign results, and direct business impact. This empowers clients to clearly measure success and confidently plan their next strategic steps.
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-2 ml-4">
-            <li>Comprehensive weekly and monthly **Performance Reports**.</li>
-            <li>Clear **ROI Calculations** and holistic business impact analysis.</li>
+            <li>Comprehensive weekly and monthly Performance Reports.</li>
+            <li>Clear ROI Calculations and holistic business impact analysis.</li>
             <li>Setup of real-time dashboards for continuous monitoring.</li>
             <li>Strategic recommendations for future scaling and next actions.</li>
           </ul>

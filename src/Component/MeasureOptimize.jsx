@@ -139,7 +139,7 @@ export default function App() {
         </h1>
         <p className="mt-6 text-lg text-gray-400 max-w-3xl mx-auto">
           We transform raw data into a reliable roadmap for sustained success. Track every KPI,
-          extract powerful insights, and continuously refine your digital presence for maximum **ROI**.
+          extract powerful insights, and continuously refine your digital presence for maximum ROI.
         </p>
       </header>
 
@@ -152,10 +152,10 @@ export default function App() {
             accurate view of your project's health and immediate alerts for critical deviations.
           </p>
           <ul className="list-disc list-inside text-gray-400 space-y-2 pl-4">
-            <li>**KPI Dashboards:** Unified views for traffic, engagement, and conversion metrics.</li>
-            <li>**App Analytics:** Deep dive into DAU, retention cohorts, and feature adoption.</li>
-            <li>**Campaign ROI:** Granular tracking of ad spend, CTR, and lead quality.</li>
-            <li>**Server & Load Monitoring:** Ensuring technical performance supports user experience.</li>
+            <li>KPI Dashboards: Unified views for traffic, engagement, and conversion metrics.</li>
+            <li>App Analytics: Deep dive into DAU, retention cohorts, and feature adoption.</li>
+            <li>Campaign ROI: Granular tracking of ad spend, CTR, and lead quality.</li>
+            <li>Server & Load Monitoring: Ensuring technical performance supports user experience.</li>
           </ul>
         </AnimatedSection>
 
@@ -163,13 +163,13 @@ export default function App() {
         <AnimatedSection title="Actionable Data Analysis & Insights" iconName="Database">
           <p className="mb-4">
             Our experts dive deep into behavioral patterns, providing the strategic intelligence needed
-            to stop guessing and start making **informed, high-impact decisions**.
+            to stop guessing and start making informed, high-impact decisions.
           </p>
           <ul className="list-disc list-inside text-gray-400 space-y-2 pl-4">
-            <li>**User Segmentation:** Identifying the most valuable customer groups.</li>
-            <li>**Conversion Funnel:** Pinpointing exact drop-off points in user journeys.</li>
-            <li>**Attribution Modeling:** Understanding which channels truly drive value.</li>
-            <li>**Predictive Modeling:** Forecasting future trends and potential risks.</li>
+            <li>User Segmentation: Identifying the most valuable customer groups.</li>
+            <li>Conversion Funnel: Pinpointing exact drop-off points in user journeys.</li>
+            <li>Attribution Modeling: Understanding which channels truly drive value.</li>
+            <li>Predictive Modeling: Forecasting future trends and potential risks.</li>
           </ul>
         </AnimatedSection>
 
@@ -180,10 +180,10 @@ export default function App() {
             digital assets are always moving towards peak efficiency and user satisfaction.
           </p>
           <ul className="list-disc list-inside text-gray-400 space-y-2 pl-4">
-            <li>**A/B and Multivariate Testing:** Rigorous validation of design and copy changes.</li>
-            <li>**CRO:** Dedicated optimization of landing pages, checkout flows, and key conversion paths.</li>
-            <li>**Personalization:** Tailoring user experiences based on behavioral data.</li>
-            <li>**Technical SEO:** Improving site speed, indexability, and core web vitals.</li>
+            <li>A/B and Multivariate Testing: Rigorous validation of design and copy changes.</li>
+            <li>CRO: Dedicated optimization of landing pages, checkout flows, and key conversion paths.</li>
+            <li>Personalization: Tailoring user experiences based on behavioral data.</li>
+            <li>Technical SEO: Improving site speed, indexability, and core web vitals.</li>
           </ul>
         </AnimatedSection>
 
@@ -194,10 +194,10 @@ export default function App() {
             timely, customized reports directly to stakeholders, promoting data literacy and agility.
           </p>
           <ul className="list-disc list-inside text-gray-400 space-y-2 pl-4">
-            <li>**Automated KPI Alerts:** Instant notification when metrics cross critical thresholds.</li>
-            <li>**Custom Dashboards:** Tailored visualizations for marketing, product, and sales teams.</li>
-            <li>**API Integration:** Connecting disparate data sources for holistic reporting.</li>
-            <li>**Executive Summaries:** Clear, concise reports focusing on business impact.</li>
+            <li>Automated KPI Alerts: Instant notification when metrics cross critical thresholds.</li>
+            <li>Custom Dashboards: Tailored visualizations for marketing, product, and sales teams.</li>
+            <li>API Integration: Connecting disparate data sources for holistic reporting.</li>
+            <li>Executive Summaries: Clear, concise reports focusing on business impact.</li>
           </ul>
         </AnimatedSection>
 
@@ -208,10 +208,10 @@ export default function App() {
             also chart a clear, scalable course for future growth and market dominance.
           </p>
           <ul className="list-disc list-inside text-gray-400 space-y-2 pl-4">
-            <li>**Roadmap Prioritization:** Data-backed guidance on where to invest development resources.</li>
-            <li>**Budget Allocation:** Optimizing marketing spend across high-performing channels.</li>
-            <li>**Future-Proofing:** Preparing your data infrastructure for evolving privacy standards.</li>
-            <li>**Product/Market Fit Insights:** Deep consumer understanding to guide product development.</li>
+            <li>Roadmap Prioritization: Data-backed guidance on where to invest development resources.</li>
+            <li>Budget Allocation: Optimizing marketing spend across high-performing channels.</li>
+            <li>Future-Proofing: Preparing your data infrastructure for evolving privacy standards.</li>
+            <li>Product/Market Fit Insights: Deep consumer understanding to guide product development.</li>
           </ul>
         </AnimatedSection>
 
@@ -219,7 +219,7 @@ export default function App() {
         <div className="pt-8 pb-12">
             <AnimatedSection title="Ready to Stop Guessing and Start Growing?" iconName="Sparkles">
                 <p className="text-gray-300 mb-6 text-center text-lg">
-                    Transform your data from an expense into your most valuable asset. Let's build a measurement framework that delivers **predictable, scalable growth**.
+                    Transform your data from an expense into your most valuable asset. Let's build a measurement framework that delivers predictable, scalable growth.
                 </p>
                 <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                     <a

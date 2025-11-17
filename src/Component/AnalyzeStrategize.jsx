@@ -152,7 +152,7 @@ export default function AnalyzeStrategize() {
             Analyze & Strategize — Building a Strong Foundation
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
-            A powerful strategy is the backbone of every successful digital product. We dig deep into your business, competitors, and customers to create an **actionable, measurable roadmap**.
+            A powerful strategy is the backbone of every successful digital product. We dig deep into your business, competitors, and customers to create an actionable, measurable roadmap.
           </p>
         </header>
       </AnimatedSection>
@@ -167,7 +167,7 @@ export default function AnalyzeStrategize() {
                 <span>Why We Start with Analysis</span>
             </h2>
             <p className="text-gray-300 text-center max-w-4xl mx-auto text-lg">
-                Too many projects skip the research phase, leading to failed initiatives and wasted resources. We ensure every decision — from feature prioritization to ad budgets — is **backed by data** and aligned with **clear business goals**, maximizing your potential for sustainable growth.
+                Too many projects skip the research phase, leading to failed initiatives and wasted resources. We ensure every decision — from feature prioritization to ad budgets — is*backed by data and aligned with clear business goals, maximizing your potential for sustainable growth.
             </p>
         </AnimatedSection>
 
