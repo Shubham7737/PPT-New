@@ -42,6 +42,12 @@ const Hero = () => {
     els.forEach(el => io.observe(el));
   }, []);
 
+
+  // handle call btn
+  const handleCall = () => {
+    window.location.href = "tel: +91 7340564188"
+  }
+
   return (
     <section className="hero" id="home">
       <div className="container">
@@ -59,7 +65,7 @@ const Hero = () => {
             <a className="btn btn-primary magnetic" href="#contact">
               Get Proposal
             </a>
-            <a className="btn btn-ghost" href="#services" >
+            <a className="btn btn-ghost" href="#services" onClick={handleCall} >
               <span id="call">Call Us </span>
             </a>
           </div>
