@@ -45,7 +45,7 @@ const Hero = () => {
 
   // handle call btn
   const handleCall = () => {
-    window.location.href = "tel: +91 7340564188"
+    window.location.href = "tel: +91 0000000000"
   }
 
   return (
