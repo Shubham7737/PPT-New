@@ -8,12 +8,19 @@ import EcommerceDetails from "./pages/EcommerceDetails";
 import WebsiteDetails from "./pages/WebsiteDetails";
 import DigitalDetailPage from "./pages/DigitalDetailPage";
 import AppPage from "./pages/AppPage";
+import useScrollToTop from "./Hooks/useScrollToTop";
+
 
 
 const App = () => {
+useScrollToTop(); 
+
   return (
-    <Router>
+    
       <div className="relative min-h-screen overflow-x-hidden">
+         
+         {/* <useScrollToTop /> */}
+
         {/* Particles Background */}
         <div className="absolute inset-0 pointer-events-none z-0">
           <ParticlesBackground />
@@ -31,7 +38,7 @@ const App = () => {
           </Routes>
         </div>
       </div>
-    </Router>
+    
   );
 };
 

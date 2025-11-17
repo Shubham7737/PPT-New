@@ -98,7 +98,7 @@ const ServiceCard = ({ title, features, buttonText }) => {
       <ul className="text-white space-y-3 mb-6 min-h-[140px]">
         {features.map((feature, i) => (
           <li key={i} className="flex items-start">
-            <span className="text-[#00d4ff] mr-2 text-xl leading-none">•</span>
+            <span className="text-white mr-2 text-xl leading-none">•</span>
             <span className="text-sm">{feature}</span>
           </li>
         ))}

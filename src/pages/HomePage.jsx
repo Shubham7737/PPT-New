@@ -59,8 +59,8 @@ const Hero = () => {
             <a className="btn btn-primary magnetic" href="#contact">
               Get Proposal
             </a>
-            <a className="btn btn-ghost" href="#services">
-              Explore Services
+            <a className="btn btn-ghost" href="#services" >
+              <span id="call">Call Us </span>
             </a>
           </div>
           <div className="metrics reveal delay-3 show">

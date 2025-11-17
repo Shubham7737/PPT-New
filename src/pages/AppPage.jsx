@@ -169,7 +169,7 @@ export default function MobileAppLandingPage() {
 
         <div className="container mx-auto text-center relative z-10 p-6 md:p-12">
           <h1 className="text-5xl md:text-7xl font-extrabold mb-4 text-white animate-fadeInUp">
-            **Transforming Ideas into Top-Rated Apps**
+            Transforming Ideas into Top-Rated Apps
           </h1>
           <p className="text-xl md:text-2xl font-light mb-8 text-gray-300 max-w-3xl mx-auto animate-fadeInUp delay-200">
             Native speed, stunning design, and scalable architecture for your next mobile breakthrough.
@@ -184,7 +184,7 @@ export default function MobileAppLandingPage() {
       <section className="py-16 md:py-24 bg-transparent border-b border-gray-800">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
-            Our **Development Expertise**
+            Our Development Expertise
           </h2>
           
           <div className="grid  md:grid-cols-3 gap-8 text-center">
@@ -215,30 +215,30 @@ export default function MobileAppLandingPage() {
             {/* Left: Rich Content and Paragraphs (Paragraph Removed) */}
             <div>
               <h2 className="text-4xl font-extrabold mb-8 text-white">
-                Our Agile **5-Step Development Roadmap**
+                Our Agile 5-Step Development Roadmap
               </h2>
               {/* The long intro paragraph has been removed */}
               
               <ul className="space-y-3 text-lg text-gray-200">
                 <li className="flex items-start">
                   <CheckCircle size={24} className="text-indigo-400 mr-3 mt-1 flex-shrink-0" />
-                  **Discovery & Strategy:** Define scope, target audience, and monetization model.
+                  Discovery & Strategy: Define scope, target audience, and monetization model.
                 </li>
                 <li className="flex items-start">
                   <CheckCircle size={24} className="text-indigo-400 mr-3 mt-1 flex-shrink-0" />
-                  **Design & Prototyping:** Wireframes, mockups, and iterative UX/UI refinement.
+                  Design & Prototyping: Wireframes, mockups, and iterative UX/UI refinement.
                 </li>
                 <li className="flex items-start">
                   <CheckCircle size={24} className="text-indigo-400 mr-3 mt-1 flex-shrink-0" />
-                  **Development & Integration:** Clean code, robust API integration, and continuous testing.
+                  Development & Integration: Clean code, robust API integration, and continuous testing.
                 </li>
                 <li className="flex items-start">
                   <CheckCircle size={24} className="text-indigo-400 mr-3 mt-1 flex-shrink-0" />
-                  **Quality Assurance (QA):** Comprehensive testing on physical devices and simulators.
+                  Quality Assurance (QA): Comprehensive testing on physical devices and simulators.
                 </li>
                  <li className="flex items-start">
                   <CheckCircle size={24} className="text-indigo-400 mr-3 mt-1 flex-shrink-0" />
-                  **Launch & Post-Launch:** App store submission, compliance, and launch day support.
+                  Launch & Post-Launch: App store submission, compliance, and launch day support.
                 </li>
               </ul>
 
@@ -277,7 +277,7 @@ export default function MobileAppLandingPage() {
       <section className="py-20 bg-transparent border-b border-gray-800">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-extrabold text-center mb-12 text-white">
-            Our **Technology Stack** & Assurance
+            Our Technology Stack & Assurance
           </h2>
           <div className="grid md:grid-cols-3 gap-8"> 
             <div className='bg-blue-50/10'>
@@ -309,7 +309,7 @@ export default function MobileAppLandingPage() {
       <section className="py-16 md:py-24 bg-transparent border-b border-gray-800">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl font-extrabold mb-12 text-white text-center">
-            Beyond Launch: **Maintenance & Scaling**
+            Beyond Launch: Maintenance & Scaling
           </h2>
 
           {/* Horizontal Scrolling Container */}
@@ -355,7 +355,7 @@ export default function MobileAppLandingPage() {
       <section className="py-20 bg-transparent border-t border-b border-gray-800">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-white">
-            Stop Dreaming, **Start Developing**.
+            Stop Dreaming, Start Developing.
           </h2>
           <p className="text-xl text-indigo-100 mb-8">
             Your idea is too valuable to wait. Let's build it together.
