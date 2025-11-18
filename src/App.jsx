@@ -19,6 +19,7 @@ import StayOnTop from "./Component/support/StayOnTop";
 import BrandValueCard from "./Component/ProTech/BrandValueCard";
 import SpeedScale from "./Component/ProTech/SpeedScale";
 import Ownership from "./Component/ProTech/Ownership";
+import Clarity from "./Component/ProTech/Clarity";
 
 
 
