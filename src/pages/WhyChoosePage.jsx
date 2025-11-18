@@ -1,29 +1,18 @@
 import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 // Data for Why Choose items
 const whyUsData = [
-  {
-    title: "Results-first",
-    description: "We obsess over business metrics, not vanity stats.",
-  },
-  {
-    title: "Speed & Scale",
-    description: "Modern stacks and battle-tested playbooks to go faster.",
-  },
-  {
-    title: "Ownership",
-    description: "We ship, measure, iterate — like partners, not vendors.",
-  },
-  {
-    title: "Clarity",
-    description: "Transparent roadmap, crisp reporting, and weekly wins.",
-  },
+  { title: "Results-first", path: "/Results-first", description: "We obsess over business metrics, not vanity stats." },
+  { title: "Speed & Scale", path: "/speed-scale", description: "Modern stacks and battle-tested playbooks to go faster." },
+  { title: "Ownership", path: "/ownership", description: "We ship, measure, iterate — like partners, not vendors." },
+  { title: "Clarity", path: "/clarity", description: "Transparent roadmap, crisp reporting, and weekly wins." },
 ];
 
 // Individual Why Card
-const WhyCard = ({ title, description, delay }) => {
+const WhyCard = ({ title, description, delay , onClick }) => {
   return (
-    <div
+    <div  onClick={onClick}
       className={`p-8 rounded-xl shadow-md transform transition duration-500 ease-out opacity-0 tilt h-[200px] border-[3px]  border-[#0f2b46] bg-gradient-to-r from-[#191e2b] to-[#00c6e6]
                   hover:scale-105 hover:shadow-lg`}
       style={{
@@ -39,6 +28,16 @@ const WhyCard = ({ title, description, delay }) => {
 };
 
 export default function WhyChoose() {
+ const navigate = useNavigate();
+
+const handleClick = (path) => {
+  navigate(path);
+};
+
+
+
+
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       entries => {
@@ -78,6 +77,7 @@ export default function WhyChoose() {
             title={item.title}
             description={item.description}
             delay={index * 0.2}
+            onClick={() => handleClick(item.path)}
           />
         ))}
       </div>

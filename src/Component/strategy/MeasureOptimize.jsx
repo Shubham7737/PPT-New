@@ -157,6 +157,8 @@ export default function App() {
             <li>Campaign ROI: Granular tracking of ad spend, CTR, and lead quality.</li>
             <li>Server & Load Monitoring: Ensuring technical performance supports user experience.</li>
           </ul>
+          <button className="w-full text-center py-2 px-4 bg-gray-700 text-[#56f6a6] rounded-lg font-semibold hover:bg-gray-600 transition duration-200 shadow-md" >
+                More Info</button>
         </AnimatedSection>
 
         {/* Section 2: Data Analysis & Insights */}
@@ -171,6 +173,8 @@ export default function App() {
             <li>Attribution Modeling: Understanding which channels truly drive value.</li>
             <li>Predictive Modeling: Forecasting future trends and potential risks.</li>
           </ul>
+           <button className="w-full text-center py-2 px-4 bg-gray-700 text-[#56f6a6] rounded-lg font-semibold hover:bg-gray-600 transition duration-200 shadow-md" >
+                More Info</button>
         </AnimatedSection>
 
         {/* Section 3: Continuous Optimization */}
@@ -185,6 +189,8 @@ export default function App() {
             <li>Personalization: Tailoring user experiences based on behavioral data.</li>
             <li>Technical SEO: Improving site speed, indexability, and core web vitals.</li>
           </ul>
+           <button className="w-full text-center py-2 px-4 bg-gray-700 text-[#56f6a6] rounded-lg font-semibold hover:bg-gray-600 transition duration-200 shadow-md" >
+                More Info</button>
         </AnimatedSection>
 
         {/* Section 4: Automation & Reporting */}
@@ -199,6 +205,8 @@ export default function App() {
             <li>API Integration: Connecting disparate data sources for holistic reporting.</li>
             <li>Executive Summaries: Clear, concise reports focusing on business impact.</li>
           </ul>
+           <button className="w-full text-center py-2 px-4 bg-gray-700 text-[#56f6a6] rounded-lg font-semibold hover:bg-gray-600 transition duration-200 shadow-md" >
+                More Info</button>
         </AnimatedSection>
 
         {/* Section 5: Strategic Recommendations */}
@@ -213,6 +221,8 @@ export default function App() {
             <li>Future-Proofing: Preparing your data infrastructure for evolving privacy standards.</li>
             <li>Product/Market Fit Insights: Deep consumer understanding to guide product development.</li>
           </ul>
+           <button className="w-full text-center py-2 px-4 bg-gray-700 text-[#56f6a6] rounded-lg font-semibold hover:bg-gray-600 transition duration-200 shadow-md" >
+                More Info</button>
         </AnimatedSection>
 
         {/* CTA Section */}

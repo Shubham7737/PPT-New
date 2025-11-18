@@ -9,13 +9,16 @@ import WebsiteDetails from "./pages/WebsiteDetails";
 import DigitalDetailPage from "./pages/DigitalDetailPage";
 import AppPage from "./pages/AppPage";
 import useScrollToTop from "./Hooks/useScrollToTop";
-import AnalyzeStrategize from "./Component/AnalyzeStrategize"
-import ExecutePrecision from "./Component/ExecutePrecision";
-import MeasureOptimize from "./Component/MeasureOptimize";
-import SupportBrandValue from "./Component/SupportBrandValue";
-import BoostUserRelationship from "./Component/BoostUserRelationship";
-import DriveWebTraffic from "./Component/DriveWebTraffic";
-import StayOnTop from "./Component/StayOnTop";
+import AnalyzeStrategize from "./Component/strategy/AnalyzeStrategize"
+import ExecutePrecision from "./Component/strategy/ExecutePrecision";
+import MeasureOptimize from "./Component/strategy/MeasureOptimize";
+import SupportBrandValue from "./Component/support/SupportBrandValue";
+import BoostUserRelationship from "./Component/support/BoostUserRelationship";
+import DriveWebTraffic from "./Component/support/DriveWebTraffic";
+import StayOnTop from "./Component/support/StayOnTop";
+import BrandValueCard from "./Component/ProTech/BrandValueCard";
+import SpeedScale from "./Component/ProTech/SpeedScale";
+import Ownership from "./Component/ProTech/Ownership";
 
 
 
@@ -51,6 +54,13 @@ useScrollToTop();
            <Route path="/boostUserRelationship" element={<BoostUserRelationship />} />
           <Route path="/DriveWebTraffic" element={<DriveWebTraffic />} />
           <Route path="/StayOnTop" element={<StayOnTop />} />
+
+
+          {/* Brand value */}
+          <Route path="/Results-first" element={<BrandValueCard />} />
+          <Route path="/speed-scale" element={<SpeedScale />} />
+          <Route path="/ownership" element={<Ownership />} />
+          <Route path="/clarity" element={<Clarity />} />
 
           </Routes>
         </div>

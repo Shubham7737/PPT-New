@@ -129,6 +129,10 @@ const PhaseCard = ({ item, index }) => {
         <p className="text-gray-300 leading-relaxed text-sm flex-grow">
             {item.description}
         </p>
+
+        <button className="mt-2 self-start px-4 py-2 text-xs rounded-lg font-semibold transition-colors duration-200
+                       bg-amber-600 text-gray-900 hover:bg-amber-500 shadow-md hover:shadow-lg">
+                           More Info </button>
     </div>
   );
 };

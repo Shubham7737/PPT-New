@@ -161,7 +161,7 @@ const ServiceCard = ({ item, index }) => {
                 <button 
                     className="mt-4 px-3 py-2 text-xs font-semibold text-white bg-indigo-600 rounded-lg hover:bg-indigo-500 transition self-start"
                 >
-                    Learn More
+                    More info
                 </button>
             </div>
         </AnimatedSection>

@@ -126,6 +126,9 @@ const ValueCard = ({ item, index }) => {
         <p className="text-gray-300 leading-relaxed text-sm flex-grow">
             {item.description}
         </p>
+
+         <button className="w-full mt-2 text-center py-2 px-4 bg-gray-700 text-white rounded-lg font-semibold hover:bg-gray-600 transition duration-200 shadow-md" >
+                More Info</button>
     </div>
   );
 };
