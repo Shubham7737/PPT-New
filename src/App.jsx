@@ -69,7 +69,10 @@ useScrollToTop();
           <Route path="/clarity" element={<Clarity />} />
 
           {/* {E-commerce details page route} */}
-         
+          <Route path="/store-management" element={<StoreManagement />} />
+          <Route path="/second-card" element={<Second />} />
+          <Route path="/third-card" element={<ThirdCard />} />
+          <Route path="/forth-card" element={<ForthCard />} />
 
           </Routes>
         </div>
