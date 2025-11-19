@@ -70,25 +70,25 @@ export default function EcommerceManagementPage() {
       title: "Complete Store Management",
       content: `We handle your online store end-to-end including product uploads, inventory management, and order fulfillment.`,
       icon: <ShoppingCart size={32} className="text-indigo-400" />,
-      imageIndex: 0,
+      image: "https://production-wordpress-cdn-dpa0g9bzd7b3h7gy.z03.azurefd.net/wp-content/uploads/2019/10/Figure-1.-Adoption-of-Advanced-Data-and-Analytics-Capabilities-Among-Retailers-in-Europe.png",
     },
     {
       title: "Targeted Marketing & Advertising",
       content: `Targeted campaigns on Google, Facebook, and Instagram to maximize ROI and visibility across all channels.`,
       icon: <TrendingUp size={32} className="text-pink-400" />,
-      imageIndex: 1,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHhqdSEjcMoa95_9INwrWcpwDSgAJABfSmvw&s",
     },
     {
       title: "Customer Support & Engagement",
       content: `24/7 chat support, prompt email handling, and proactive engagement for better customer retention and brand loyalty.`,
       icon: <Users size={32} className="text-sky-400" />,
-      imageIndex: 3,
+      image: "https://salestechstar.com/wp-content/uploads/2025/07/RADAR-Launches-Advanced-AI-Data-Analytics-Platform-to-Transform-Retail-Stores-768x434.jpg",
     },
     {
       title: "Analytics & Optimization",
       content: `Track user behavior, sales metrics, and conversion rates to continuously improve site performance and profitability.`,
       icon: <BarChart3 size={32} className="text-green-400" />,
-      imageIndex: 2,
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5lJxdrfqlUcsO1ZRbPj2CKkIwWa0gzbhqFg&s",
     },
   ];
 
@@ -422,22 +422,22 @@ export default function EcommerceManagementPage() {
       </section>
 
       {/* --- Counting Section (Enhanced) --- */}
-      <section className="mt-16 mb-20 max-w-5xl mx-auto text-center border-t border-b border-gray-800 py-12">
+     <section className="max-w-5xl mx-auto text-center py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="bg-blue-50/10 flex flex-col items-center justify-center p-6 rounded-2xl border border-indigo-700/50 shadow-xl">
+          <div className="bg-gray-800/50 flex flex-col items-center justify-center p-6 rounded-2xl border border-sky-900 shadow-lg shadow-sky-900/50">
             <div className="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-400">
               {projectsCount}+
             </div>
-            <div className="text-2xl md:text-3xl font-medium mt-3 text-gray-200">
+            <div className="text-2xl md:text-3xl font-medium mt-3 text-gray-300">
               Completed E-commerce Projects
             </div>
           </div>
 
-          <div className="bg-blue-50/10 flex flex-col items-center justify-center p-6 rounded-2xl border border-indigo-700/50 shadow-xl">
-            <div className="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-green-400">
+          <div className="bg-gray-800/50 flex flex-col items-center justify-center p-6 rounded-2xl border border-sky-900 shadow-lg shadow-sky-900/50">
+            <div className="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-green-400">
               {clientsCount}+
             </div>
-            <div className="text-2xl md:text-3xl font-medium mt-3 text-gray-200">
+            <div className="text-2xl md:text-3xl font-medium mt-3 text-gray-300">
               Satisfied Global Clients
             </div>
           </div>
@@ -456,8 +456,8 @@ export default function EcommerceManagementPage() {
     // 2. The main flex structure (flex-col, md:flex-row/reverse) is preserved for content layout.
     className={`
       flex flex-col items-center gap-10 p-6 md:p-10 rounded-3xl 
-      border border-gray-800 bg-blue-50/10 relative 
-      shadow-2xl hover:shadow-indigo-500/20 transition duration-500
+      border border-sky-900 bg-gray-800/50 relative 
+      shadow-xl hover:shadow-sky-800 transition duration-500
       
       ${i % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'}
     `}
@@ -477,18 +477,12 @@ export default function EcommerceManagementPage() {
       </p>
     </div>
 
-    {/* --- Image/Visual Area --- */}
-    <div className="overflow-hidden rounded-2xl w-full md:w-1/2 shadow-xl border border-gray-700">
+     <div className="overflow-hidden rounded-2xl w-full md:w-1/2 shadow-xl border border-gray-700">
       <img
-        src={sliderImages[service.imageIndex % sliderImages.length]}
-        alt={`Service ${i}: ${service.title}`}
-        className="w-full h-64 object-cover transform transition duration-700 hover:scale-105"
-        onError={e => {
-          e.currentTarget.onerror = null;
-          e.currentTarget.src =
-            "https://placehold.co/600x400/1e293b/a5b4fc?text=Service+Visual";
-        }}
-      />
+  src={service.image}  // ✅ sahi variable
+  alt={service.title}
+  className="w-full h-64 object-cover transform transition duration-700 hover:scale-105"
+/>
     </div>
 
     {/* --- Call to Action Button (Optimized for Bottom Right) --- */}
@@ -513,9 +507,11 @@ export default function EcommerceManagementPage() {
         </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
           {highlightCards.map((item, index) => (
-            <div
+             <div
               key={index}
-              className="p-4 rounded-xl shadow-lg border-1 border-[#4D4DFF] text-center flex flex-col items-center justify-center h-28 hover:scale-[1.05] transform transition duration-300"
+              className="p-4 rounded-xl shadow-xl border text-center flex flex-col items-center justify-center h-28 transform transition hover:scale-[1.05] 
+                                    border-solid border-[1px] border-[#01ffc8]/50
+                                    shadow-teal-500/30" /*  Neon Border Applied Here */
             >
               <span className="text-indigo-400 mb-2">{item.icon}</span>
               <p className="font-medium text-sm text-gray-200">{item.text}</p>
@@ -525,7 +521,7 @@ export default function EcommerceManagementPage() {
       </section>
 
       {/* Final CTA Section */}
-      <div className="bg-blue-50/10 text-center mt-20 pb-10 max-w-4xl mx-auto p-8 rounded-3xl border border-indigo-700/50 shadow-2xl">
+      <div className="bg-gray-800/50 text-center mt-20 pb-10 max-w-4xl mx-auto p-8 rounded-3xl border border-indigo-700/50 shadow-2xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
           Ready to Scale Your Business?
         </h2>

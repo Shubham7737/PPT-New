@@ -211,7 +211,7 @@ export default function WebsiteDevelopmentPage() {
   useEffect(() => {
     let p = 0;
     let c = 0;
-    const maxP = 975;
+    const maxP = 976;
     const maxC = 912;
 
     const pInterval = setInterval(() => {
@@ -245,37 +245,43 @@ export default function WebsiteDevelopmentPage() {
       title: "Custom Responsive Web Design & Development",
       content: `We specialize in **custom website solutions** that feature **responsive web design**, ensuring flawless performance and aesthetics on desktops, tablets, and smartphones. Our focus is on delivering high-speed, intuitive user experiences (UX) and clean, modern interfaces that reflect your brand identity. This foundational step is crucial for engaging visitors and establishing a credible online presence.`,
       icon: <Code size={32} className="text-sky-600" />,
-      imageIndex: 0,
+      imageIndex:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNdtmkSgBKBrTLuBTA9fVCmxsiSeclcszESg&s",
     },
     {
       title: "Advanced SEO & Digital Visibility Strategy",
       content: `Beyond mere development, every site we build is optimized for search engines from the ground up. We integrate **technical SEO**, robust site mapping, and fast loading speeds to achieve higher organic rankings. This increases your digital visibility, driving targeted traffic and long-term, sustainable growth without reliance on paid advertising.`,
       icon: <Search size={32} className="text-teal-600" />,
-      imageIndex: 1,
+      imageIndex:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjoa_dQ8xPRE9je7YaOh4Ufaz-PpAAAcqDpQ&s",
     },
     {
       title: "Scalable CMS Integration & User Dashboards",
       content: `Gain full control over your content with scalable **Content Management System (CMS)** integrations like WordPress, Strapi, or custom backends. We provide user-friendly custom dashboards, allowing your team to manage products, update content, and process orders efficiently, making your website a dynamic, future-proof asset.`,
       icon: <LayoutGrid size={32} className="text-green-600" />,
-      imageIndex: 2,
+      imageIndex:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqMVYxsOg7qH-xkmoZKHel3S2H3VkGcuVHqw&s",
     },
     {
       title: "High-Speed Single Page Applications (SPA)",
       content: `For sophisticated platforms, SaaS products, and highly interactive sites, we leverage modern frameworks like React and Vue to build **Single Page Applications (SPAs)**. SPAs offer incredibly smooth, fast, and desktop-like user experiences, reducing friction and boosting user engagement dramatically in real-time applications.`,
       icon: <Zap size={32} className="text-pink-600" />,
-      imageIndex: 3,
+      imageIndex:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxByTdAFlIKHDtqvfFRpqV7eCVocirMmyYbQ&s",
     },
     {
       title: "Conversion-Focused Landing Pages",
       content: `Our designs are strategically focused on maximizing your return on investment. We create highly persuasive landing pages with clear Calls-to-Action (CTAs), A/B testing capabilities, and robust lead capture forms. These pages are engineered specifically for **lead generation** and sales conversion, turning visitors into paying customers.`,
       icon: <Target size={32} className="text-orange-600" />,
-      imageIndex: 4,
+      imageIndex:
+        "https://cdn.prod.website-files.com/65bb7884c67879aa0d84f24e/65c0eb721ea864f342f436f8_What-are-landing-pages-and-why-do-you-need-to-use-them.jpeg",
     },
     {
       title: "Continuous Maintenance & Technical Support",
       content: `Website success requires ongoing care. We provide comprehensive continuous maintenance, crucial security updates, and performance optimization to ensure your site remains fast, secure, and accessible 24/7. Our dedicated team is ready for rapid bug fixes and technical support to keep your business running smoothly.`,
       icon: <Headset size={32} className="text-indigo-600" />,
-      imageIndex: 5,
+      imageIndex:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnv-cbGTqpZ08jn7b6oN2mnvca_YkgJLRJKw&s",
     },
   ];
 
@@ -292,9 +298,8 @@ export default function WebsiteDevelopmentPage() {
     <div className="min-h-screen py-16 px-4 md:px-8 space-y-20 font-sans text-gray-200">
       {/* --- Hero Card: Title Color Changed to White --- */}
       <div className="bg-gray-800/50 max-w-5xl mx-auto rounded-3xl p-8 md:p-12 shadow-2xl shadow-sky-900/50 text-center border border-sky-900">
-        <h1 className="text-4xl md:text-6xl font-extrabold text-white animate-fadeInDown">
+        <h1 className="text-4xl md:text-6xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-sky-300 animate-fadeInDown">
           {" "}
-          {/* 💥 CHANGED: text-transparent to text-white 💥 */}
           Expert Web Design Company for Digital Transformation
         </h1>
         <h2 className="mt-4 text-xl text-white md:text-2xl font-medium leading-relaxed max-w-3xl mx-auto animate-fadeInUp">
@@ -316,7 +321,7 @@ export default function WebsiteDevelopmentPage() {
       <section className="max-w-5xl mx-auto text-center py-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           <div className="bg-gray-800/50 flex flex-col items-center justify-center p-6 rounded-2xl border border-sky-900 shadow-lg shadow-sky-900/50">
-            <div className="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-teal-400">
+            <div className="text-6xl md:text-7xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-pink-400">
               {projectsCount}+
             </div>
             <div className="text-2xl md:text-3xl font-medium mt-3 text-gray-300">
@@ -350,14 +355,9 @@ export default function WebsiteDevelopmentPage() {
             {/* Image/Visual Placeholder */}
             <div className="overflow-hidden rounded-2xl w-full md:w-1/2 shadow-lg border border-gray-700">
               <img
-                src={images[service.imageIndex]}
-                alt={`Service Visual ${i}: ${service.title}`}
+                src={service.imageIndex} // ✅ sahi variable
+                alt={service.title}
                 className="w-full h-64 object-cover transform transition duration-700 hover:scale-105"
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src =
-                    "https://placehold.co/600x400/000/fff?text=Service+Visual";
-                }}
               />
             </div>
 
@@ -399,13 +399,12 @@ export default function WebsiteDevelopmentPage() {
             <div
               key={index}
               className="p-4 rounded-xl shadow-xl border text-center flex flex-col items-center justify-center h-28 transform transition hover:scale-[1.05] 
-                                     border-solid border-[3px] border-[#01ffc8]/50
-                                    shadow-teal-500/30 ring-2 " /*  Neon Border Applied Here */
+                                    border-solid border-[1px] border-[#01ffc8]/50
+                                    shadow-teal-500/30" /*  Neon Border Applied Here */
             >
               <span className="mb-2 text-blue-500">{item.icon}</span>
               <p className="font-semibold text-sm text-gray-100">{item.text}</p>
             </div>
-            
           ))}
         </div>
       </section>
