@@ -22,8 +22,8 @@ import Ownership from "./Component/ProTech/Ownership";
 import Clarity from "./Component/ProTech/Clarity";
 import StoreManagement from "./Component/EcardService/StoreManagement";
 import Second from "./Component/EcardService/Second";
-import ThirdCard from "./Component/EcardService/thirdCard";
-import ForthCard from "./Component/EcardService/forthCard";
+import ThirdCard from "./Component/EcardService/ThirdCard";
+import ForthCard from "./Component/EcardService/ForthCard";
 
 
 
