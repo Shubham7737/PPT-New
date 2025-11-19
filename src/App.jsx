@@ -20,6 +20,11 @@ import BrandValueCard from "./Component/ProTech/BrandValueCard";
 import SpeedScale from "./Component/ProTech/SpeedScale";
 import Ownership from "./Component/ProTech/Ownership";
 import Clarity from "./Component/ProTech/Clarity";
+import StoreManagement from "./Component/EcardService/StoreManagement";
+import Second from "./Component/EcardService/Second";
+import ThirdCard from "./Component/EcardService/thirdCard";
+import ForthCard from "./Component/EcardService/forthCard";
+
 
 
 
@@ -57,11 +62,17 @@ useScrollToTop();
           <Route path="/StayOnTop" element={<StayOnTop />} />
 
 
-          {/* Brand value */}
+          {/* Brand value page route */}
           <Route path="/Results-first" element={<BrandValueCard />} />
           <Route path="/speed-scale" element={<SpeedScale />} />
           <Route path="/ownership" element={<Ownership />} />
           <Route path="/clarity" element={<Clarity />} />
+
+          {/* {E-commerce details page route} */}
+          <Route path="/store-management" element={<StoreManagement />} />
+          <Route path="/second-card" element={<Second />} />
+          <Route path="/third-card" element={<ThirdCard />} />
+          <Route path="/forth-card" element={<ForthCard />} />
 
           </Routes>
         </div>

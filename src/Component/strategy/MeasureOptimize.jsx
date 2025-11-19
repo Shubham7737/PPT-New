@@ -127,7 +127,7 @@ export default function App() {
   }, []);
 
   return (
-    <main className="min-h-screen text-gray-100 py-16 px-4 md:px-12 lg:px-24 bg-gray-950">
+    <main className="min-h-screen text-gray-100 py-16 px-4 md:px-12 lg:px-24 ">
       
       {/* Hero Section */}
       <header className="max-w-5xl mx-auto text-center mb-16">

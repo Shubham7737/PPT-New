@@ -19,6 +19,7 @@ import {
   MessageSquare,
   CheckCircle,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export default function EcommerceManagementPage() {
   // --- State Management for Main Component ---
@@ -29,6 +30,31 @@ export default function EcommerceManagementPage() {
   // Functions to manage modal visibility
   const openModal = useCallback(() => setIsModalOpen(true), []);
   const closeModal = useCallback(() => setIsModalOpen(false), []);
+
+  // navigate 
+  const navigate = useNavigate();
+
+    const handleClick = (i) => {
+      switch (i) {
+      case 0:
+        navigate("/store-management");   // First.jsx
+        break;
+      case 1:
+        navigate("/second-card");
+        break; 
+      case 2:
+        navigate("/third-card");
+        break; 
+      case 3:
+        navigate("/forth-card");
+        break;    
+      
+      default:
+        navigate("/");        // fallback
+    }
+  };
+
+
 
   // Static Data (Moved inside for single-function structure)
   const sliderImages = [
@@ -466,15 +492,11 @@ export default function EcommerceManagementPage() {
     </div>
 
     {/* --- Call to Action Button (Optimized for Bottom Right) --- */}
-    <button
-      className=" mt-5
+    <button     onClick={() => handleClick(i)}
+      className=" mt-5  
         w-max px-6 py-2 text-sm font-semibold text-white bg-teal-600 rounded-lg 
-        hover:bg-teal-500 transition shadow-md
-        
-        // Mobile (default): Show the button below the content/image
-        mt-1 ml-auto 
-        
-        // Desktop (md): Position it absolutely at the bottom right of the card (p-10 spacing)
+        hover:bg-teal-500 transition shadow-md 
+        mt-1 ml-auto   
         md:absolute md:bottom-5 md:right-5 md:mt-0 md:ml-0
       "
     >
